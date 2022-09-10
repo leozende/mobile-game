@@ -49,7 +49,7 @@ public class PlayerBehaviour : MonoBehaviour
         float horizontalSpeed = 0;
         
         //Check if we are running either in the Unity editor or in a Standalone build.
-        #if UNITY_STANDALONE || UNITY_WEBPLAYER
+        #if UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_EDITOR
 
         // Check if we're moving to the side
         horizontalSpeed = Input.GetAxis("Horizontal") * dodgeSpeed;
